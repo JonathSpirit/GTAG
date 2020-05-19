@@ -1,37 +1,51 @@
-Le GTAG est un adaptateur entre le uc et le JTAG de silicon labs
+Le GTAG est un adaptateur entre le uc et le JTAG de silicon labs.
+GTAG is an adapter between the uc and the JTAG of silicon labs.
 
 -------------------------------------------
 
-R1 = 1k
-de TMS/C2CK_S à TDI/C2CK
+R = 1k
+between C2CKs_TMS and C2CK_TDI
 
-R2 = 1k
-de TDO/C2D_S à TCK/C2D
+R = 1k
+between C2Ds_TDO and C2D_TCK
 
-R3 = 10k
-de 3.3V à TMS/C2CK_S
-
--------------------------------------------
-
-de TCK/C2D à P3.0
-de TDO/C2D_S à P3.0
-
-de TMS/C2CK_S à RST
-de TDI/C2CK à RST
+R = 1k
+pull-up between VREF and C2CKs_TMS
 
 -------------------------------------------
 
-Format simple (5 pattes) :
+C2D_TCK to P3.0
+C2CK_TDI to RST
 
-5) TCK/C2D
-4) TMS/C2CK_S
-3) TDO/C2D_S
-2) TDI/C2CK
+from C8051F38x :
+"an external pullup and/or decoupling of the RST
+pin may be necessary to avoid erroneous noise-induced resets."
+
+-------------------------------------------
+
+Simple format  (5 pins) :
+
+5) C2D_TCK
+4) C2CKs_TMS
+3) C2Ds_TDO
+2) C2CK_TDI
 1) GND
 
-Format compact (4 pattes) :
+Compact format  (4 pins) :
 
-4) TCK/C2D
-3) TDI/C2CK
-2) 3.3V
+4) C2D_TCK
+3) C2CK_TDI
+2) VREF
 1) GND
+
+-------------------------------------------
+
+This documentation describes Open Hardware and is licensed under the
+CERN OHL v. 1.2.
+
+You may redistribute and modify this documentation under the terms of the
+CERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
+MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
+PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable
+conditions
