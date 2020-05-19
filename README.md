@@ -23,7 +23,7 @@ conditions
 
 ## Description
 GTAG is a small adaptation card for the silicon-labs JTAG Debug adapter.
-The utilty is to not having to place the big 1x05 header connector and not solder any resistance for
+The utility is to not having to place the big 1x05 header connector and not solder any resistance for
 small board conception.
 
 Silicon-labs USB-Debug-Adapter : https://www.silabs.com/documents/public/user-guides/8-bit-USB-Debug-Adapter.pdf
