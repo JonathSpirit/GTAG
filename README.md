@@ -30,3 +30,5 @@ Silicon-labs USB-Debug-Adapter : https://www.silabs.com/documents/public/user-gu
 
 <img src="images/GTAG_top.png" alt="GTAG_image" width="400"/>
 <img src="images/GTAG_bot.png" alt="GTAG_image" width="400"/>
+
+<img src="images/GTAG_representation.png" alt="GTAG_image" width="800"/>
