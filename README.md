@@ -28,4 +28,5 @@ small board conception.
 
 Silicon-labs USB-Debug-Adapter : https://www.silabs.com/documents/public/user-guides/8-bit-USB-Debug-Adapter.pdf
 
-<img src="images/GTAG.JPG" alt="GTAG_image" width="400"/>
+<img src="images/GTAG_top.png" alt="GTAG_image" width="400"/>
+<img src="images/GTAG_bot.png" alt="GTAG_image" width="400"/>
